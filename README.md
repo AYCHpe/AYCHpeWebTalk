@@ -1,0 +1,56 @@
+# ottawajs-p2p-web-talk
+My presentation on the P2P web, focusing on Dat and the Beaker Browser
+
+# Plans
+
+- Quick demo
+    - Make a site using Beaker
+    - Load it
+- What _is_ the P2P web
+  - Centralization
+    - Star topology diagram
+    - Two people connect through the central node
+    - If the central node is down, can't connect
+  - P2p
+    - Mesh topology diagram
+    - Rout between two people
+    - Alternate route between two people
+- Why is Centralization so popular
+  - Setting up a website is hard
+  - DNS
+  - Servers
+  - Costs for bandwidth
+  - Businesses want to control the data for profit
+- Why has made P2P hard to use
+  - Difficult to discover peers
+  - Traversing networks can be difficult to set up
+  - Dealing with malicious peers
+  - Lack of easy-to-use tech
+- Dat
+  - Created to help share scientific data securely
+  - Data is shared by linking to a URL
+    - The URL is a public key used for encryption
+    - Peers are found on the network using a discovery key that's derived from the public key
+    - If someone doesn't know the URL, they can't see the data
+  - Backed by append-only logs (hypercore)
+    - Kinda like a blockchain, but the fundemental building block it's based on
+    - Can load parts of the log from any peer and know that it's valid
+    - Structure is efficiently stored such that you only need to get the subset that you want
+  - High level API looks like a filesystem
+    - Can read/write files and directories
+    - Can watch for filesystem changes
+  - The data is versioned
+    - Can look at the change history
+    - Can check out an older version
+  - Diagram
+    - Two sides with blocks
+    - Some blocks are greyed out
+    - Arrows representing downloads
+- Discovery-swarm
+  - Bittorrent DHT
+    - Diagram of DHT
+    - Can publish your IP address to advertise yourself to peers
+    - Can find peers for data you want
+  - MDNS
+    - Advertise on local network
+    - Discovery local machines without an internet connection
