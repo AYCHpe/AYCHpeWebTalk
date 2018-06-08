@@ -58,6 +58,7 @@ My presentation on the P2P web, focusing on Dat and the Beaker Browser
     - Advertise on local network
     - Discover local machines without an internet connection
 - Beaker Browser
+    - Make sure [logo](dat://beakerbrowser.com/img/logo/logo.png) is displayed over `#5743ff` background
     - Experimental browser
     - Based on Electron
     - Able to load `dat://` urls
@@ -75,7 +76,7 @@ My presentation on the P2P web, focusing on Dat and the Beaker Browser
  - Gotchas
     - When nobody is seeding a dat, new users can't get it
         - Easy to set up own "seeding" peer
-        - https://hashbase.io/ does 200MB hosting for free (open source service)
+        - https://hashbase.io/ does 200MB hosting for free (open source service) https://hashbase.io/assets/images/logo.png
         - No vendor lock in since anyone can set up hosting for your dat
     - When a file is updated in a Dat, the full file is saved in the history
         - Prefer smaller files
