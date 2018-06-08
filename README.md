@@ -64,6 +64,14 @@ My presentation on the P2P web, focusing on Dat and the Beaker Browser
     - Provides interfface for creating and managing "dat sites"
     - JavaScript API for manipulating Dat archives
     - Demo: WYSIWYWiki
+    - Demo Fritter
+ - Outside of beaker
+    - http://gateway.mauve.moe:300/
+    - https://github.com/RangerMauve/dat-polyfill
+    - Can view and interact with Dat in any browser
+    - Can create dats using the JS API with private keys being stored in the browser
+    - Not as private or offline-friendly because the gateway sees what you access
+    - [Fritter for web](http://gateway.mauve.moe:3000/fritter-web-rangermauve.hashbase.io)
  - Gotchas
     - When nobody is seeding a dat, new users can't get it
         - Easy to set up own "seeding" peer
