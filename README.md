@@ -11,7 +11,7 @@ My presentation on the P2P web, focusing on Dat and the Beaker Browser
     - Star topology diagram
     - Two people connect through the central node
     - If the central node is down, can't connect
-  - P2p
+  - P2P
     - Mesh topology diagram
     - Rout between two people
     - Alternate route between two people
@@ -42,10 +42,13 @@ My presentation on the P2P web, focusing on Dat and the Beaker Browser
   - The data is versioned
     - Can look at the change history
     - Can check out an older version
-  - Diagram
+  - Repliation diagram
     - Two sides with blocks
     - Some blocks are greyed out
     - Arrows representing downloads
+  - Offline first
+    - If you've viewed a Dat, the files you viewed are cached locally and available offline
+    - Can work with data locally and sync with others eventually when you're both online
 - Discovery-swarm
   - Bittorrent DHT
     - Diagram of DHT
@@ -53,4 +56,30 @@ My presentation on the P2P web, focusing on Dat and the Beaker Browser
     - Can find peers for data you want
   - MDNS
     - Advertise on local network
-    - Discovery local machines without an internet connection
+    - Discover local machines without an internet connection
+- Beaker Browser
+    - Experimental browser
+    - Based on Electron
+    - Able to load `dat://` urls
+    - Provides interfface for creating and managing "dat sites"
+    - JavaScript API for manipulating Dat archives
+    - Demo: WYSIWYWiki
+ - Gotchas
+    - When nobody is seeding a dat, new users can't get it
+        - Easy to set up own "seeding" peer
+        - https://hashbase.io/ does 200MB hosting for free (open source service)
+        - No vendor lock in since anyone can set up hosting for your dat
+    - When a file is updated in a Dat, the full file is saved in the history
+        - Prefer smaller files
+        - Split up large data sets
+ - What to do with this
+    - Centralization is empowering large corporations to build monopolies
+    - They control what data you can share, who you can share it to, and what data you can see
+    - It enables advertisers to learn everything about you
+    - It makes it so that you _have_ to buy hosting if you want to get information on your own terms
+    - The web was initially made to be decentralized, but its evolution has made it hard to do so
+    - We need to connect people _together_, not via a third party
+    - Instead of storing users data in a centralized repo, have users store their data in their own dats
+        - Data is owned by users, they decide who sees it by sharing their URL
+        - You don't need infrastructure to support them
+        - Your apps can work offline or over local networks with zero internet
